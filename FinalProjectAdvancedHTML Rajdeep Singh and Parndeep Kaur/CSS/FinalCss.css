@@ -1,0 +1,215 @@
+header
+{
+    background-color: darkolivegreen;
+    height: 100px;
+    width: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive , footer,header {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive , footer , header{
+    width: 100%;
+  }
+}
+
+
+.gallery
+{
+    margin: 10px;
+    padding: 30px;
+    border: 3px solid red;
+    align-content: center;
+  float: left;
+  width: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.gallery:hover {
+  border: 1px solid #777;
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.logo
+{
+    display: flex;
+    margin-left: 30px;
+    padding-top: 10px;
+    height: 80px;
+    width: 150px;
+    align-content: center;
+}
+.navbar {
+  
+  background-color: darkolivegreen;
+  font-family: Arial;
+    justify-content: center;
+}
+a
+{
+    text-decoration: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    display: flex;
+  float: left;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:cursive;
+}
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+
+}
+section
+{
+    display: flex;
+    height: 400px;
+    width: 100%;
+     border: 10px solid black;
+}
+.testi{
+    width: 100%;
+    height: 50%;
+    
+    
+}
+form
+{
+display: flex;
+    background-color: mediumaquamarine;
+}
+.navbar input[type=text] {
+    display: flex;
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover {
+  background-color: darkolivegreen;
+}
+
+/*media query for mobile screens*/
+@media only screen and (min-width: 50px) and (max-width: 599px) {
+ section{
+    width: 70.99999%;
+     height:1500px;
+    margin: 10px;
+  }
+  }
+/*media query for i-pads screens*/
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+     {
+        width: 100%;}}
+
+  /*media query for desktop screens*/
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+      {
+    width: 100%;
+   
+  }
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+    
+button:hover {
+  opacity:1;
+}
+    form
+    {
+        height: 600px;
+        width: 100%;
+    }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: olive;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+    background-color: aqua;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
